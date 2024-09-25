@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lagoon Page</title>
+    <title>Index Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
@@ -14,11 +14,13 @@
 
 </head>
 <body>
-    <!-- Прелоадер -->
+<!-- Preloader -->
     <div id="preloader">
         <div class="loader"></div>
     </div>
+<!-- End Preloader -->
 
+<!-- Intro section -->
     <div id="intro" class="parallax-window" data-parallax="scroll" data-image-src="img/main-img-1.jpg">
         <nav id="nav" class="fixed w-full">
             <div class="container mx-auto px-2 md:py-5 text-right flex justify-between items-center">
@@ -48,11 +50,13 @@
             </div>
         </div>
     </div>
+<!-- End Intro section -->
 
+<!-- Yacht card section -->
     <div id="boat" class="parallax-window" data-parallax="scroll" data-image-src="img/main-img-2.jpg">
         <div class="flex flex-col  py-24 sm:py-48">
             <div class="text-center mb-16">
-                <h2 class="cross-line text-white text-4xl font-medium inline-block text-center">
+                <h2 class="title-style text-white text-4xl font-medium inline-block text-center">
                     <span>Наш флот</span>
                 </h2>
             </div>
@@ -85,7 +89,9 @@
             </div>
         </div>
     </div>
+<!-- End Yacht card section -->
 
+<!-- Contact Form section -->
     <div id="contact" class="parallax-window relative" data-parallax="scroll" data-image-src="img/main-img-3.jpg">
         <div class="container mx-auto container pt-24 pb-48 sm:py-48">
             <div class="flex flex-col lg:flex-row justify-around items-center lg:items-stretch">
@@ -115,6 +121,8 @@
                     </form>
                 </div>
             </div>
+<!-- End Contact Form section -->
+<!-- Footer -->
             <footer class="absolute bottom-0 left-0 w-full">
                 <div class="text-slate-300 container mx-auto container p-8 text-lg flex flex-col md:flex-row justify-between">
                     <span class="copyright font-semibold">Copyright <script>document.write(new Date().getFullYear());</script>.
@@ -122,12 +130,15 @@
                     </span>
                 </div>
             </footer>
+            <!-- End Footer -->
         </div>
     </div>
 
+<!-- Scripts -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>
+
     <script>
 
         function checkAndShowHideMenu() {
@@ -182,5 +193,6 @@
             $('body').addClass('loaded');
         });
     </script>
+<!-- End Scripts -->
 </body>
 </html>

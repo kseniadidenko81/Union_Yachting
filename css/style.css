@@ -168,7 +168,7 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
     transition: all 0.3s ease;
 }
 
-#nav li a.current,
+#nav li.active a,
 #nav li a:hover {
     border-bottom: 2px solid #fff;
 }

@@ -268,7 +268,6 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .in-block .brand-name img {
-    opacity: .7;
     position: absolute;
     top: 0;
     z-index: 2;

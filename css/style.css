@@ -1,6 +1,7 @@
 body {
     font-family: "Caveat", system-ui;
-    background-color: #046896;
+    background-color: linear-gradient(rgba(26, 134, 181, 0.7), rgba(6, 128, 243, 0.7));
+    background: url(../img/main-img-1.jpg);
     font-display: swap;
 }
 

@@ -1,5 +1,3 @@
-(function ($) {
-
   var thumbnails = document.getElementById("thumbnails")
   var imgs = thumbnails.getElementsByTagName("img")
   var main = document.getElementById("main-img")
@@ -14,4 +12,3 @@
     })
 
   }
-})(jQuery);

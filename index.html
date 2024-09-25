@@ -138,22 +138,8 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#nav li:first-child').addClass('active');
-
-            $('#nav li a').on('click', function(event) {
-                event.preventDefault();
-
-                $('#nav li').removeClass('active');
-
-                $(this).parent().addClass('active');
-            });
-        });
-    </script>
     
     <script>
-
         function checkAndShowHideMenu() {
             if(window.innerWidth < 768) {
                 $('#nav ul').addClass('hidden');

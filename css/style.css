@@ -4,7 +4,7 @@ body {
     font-display: swap;
 }
 
-/* Стиль для прелоадера */
+/* Preloader */
 #preloader {
     position: fixed;
     top: 0;
@@ -47,7 +47,9 @@ body.loaded #preloader {
     transition: opacity 1s ease-in-out;
     visibility: hidden;
 }
+/* End Preloader */
 
+/* Common style */
 p a {
 	color: #FF6;
 }
@@ -101,6 +103,11 @@ footer span a { color: #FFF; }
     text-shadow: 1px 1px 2px #000;
 }
 
+.text-2xl {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
 .uppercase {
     text-transform: uppercase;
 }
@@ -115,10 +122,6 @@ a.bg-green:hover {
 
 .bg-green {
     background-color: #006666;
-}
-
-.border-gold {
-    border-color: #fff;
 }
 
 .intro-width {
@@ -147,7 +150,9 @@ input::-ms-input-placeholder,
 textarea::-ms-input-placeholder { /* Microsoft Edge */
     color: rgb(214, 212, 212);
 }
+/* Common style */
 
+/* Nav */
 #nav {
     z-index: 1000;
     transition: all 0.3s ease;
@@ -167,22 +172,6 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
     border-bottom: 2px solid #fff;
 }
 
-.text-2xl {
-    font-size: 1.2rem;
-    line-height: 2rem;
-}
-
-.cross-line {
-    font-size: 48px;
-}
-
-.cross-line > span {
-    padding: 0 15px;
-    line-height: 30px;
-    text-align: center;
-    text-shadow: 1px 1px 2px #000;
-}
-
 .menu-item {
     display: grid;
     gap: 24px;
@@ -195,10 +184,6 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
 .menu-item-2 img {
     max-width: 60%;
     margin: auto;
-}
-
-.copyright-link {
-    color: #fff;
 }
 
 .brand-name img {
@@ -249,9 +234,20 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
         margin-bottom: 10px;
     }
 }
+/* End Nav */
 
+.title-style {
+    font-size: 48px;
+}
 
-/* Pages-In Section */
+.title-style > span {
+    padding: 0 15px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Pages-In */
 .in-block {
     display: flex;
     justify-content: center;
@@ -260,7 +256,7 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .in-block .brand-name {
-    border: 100px solid #ffffff;
+    border: 100px solid #fff;
     border-top-color: rgb(141 206 253);
     border-bottom: 0;
     border-right-color: transparent;
@@ -280,7 +276,7 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
     background-color: rgb(15 105 148 / 80%);
 }
 
-.img-bg-hr {
+.describe {
     background-size: cover;
     background-position: 0% 0%;
     background-repeat: no-repeat;
@@ -365,4 +361,9 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
 
 .hidden {
     opacity: 0;
+}
+
+
+.copyright-link {
+    color: #fff;
 }

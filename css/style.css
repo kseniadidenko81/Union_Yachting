@@ -353,7 +353,7 @@ nav.fixed {
 .modal-content {
   display: block;
   margin: auto;
-  width: 80%;
+  width: 70%;
   transition: 0.3s;
   position: fixed;
   left: 50%;

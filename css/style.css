@@ -1,10 +1,62 @@
 body {
+<<<<<<< HEAD
   /* font-family: "Caveat", system-ui; */
   font-family: "Open Sans", sans-serif;
   background: url(../img/main-img-1.jpg);
   font-display: swap;
   position: relative;
+=======
+    font-family: "Caveat", system-ui;
+    background-color: linear-gradient(rgba(26, 134, 181, 0.7), rgba(6, 128, 243, 0.7));
+    background: url(../img/main-img-1.jpg);
+    font-display: swap;
 }
+
+/* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid rgba(26, 134, 181, 0.7);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* .parallax-window {
+    display: none;
+}
+
+body.loaded .parallax-window {
+    display: block;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+} */
+
+body.loaded #preloader {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    visibility: hidden;
+>>>>>>> 02e7d8354cf46d1d32ac3ae0ab6c20e1d6569677
+}
+/* End Preloader */
 
 /* Common style */
 p a {
@@ -50,8 +102,29 @@ sm:flex-row {
   line-height: 2rem;
 }
 
+.text-2xl {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
 .uppercase {
+<<<<<<< HEAD
   text-transform: uppercase;
+=======
+    text-transform: uppercase;
+}
+
+a.bg-green:hover {
+    background-color: #0a8585;
+}
+
+.bg-brown {
+    background-color: #544639;
+}
+
+.bg-green {
+    background-color: #006666;
+>>>>>>> 02e7d8354cf46d1d32ac3ae0ab6c20e1d6569677
 }
 
 .intro-width {
@@ -101,12 +174,20 @@ textarea::-ms-input-placeholder {
   border-bottom: 1px solid #02354d;
 }
 
+<<<<<<< HEAD
 nav.fixed {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
   width: 100%;
+=======
+@media (min-width: 768px) {
+    #nav.scroll .container {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+>>>>>>> 02e7d8354cf46d1d32ac3ae0ab6c20e1d6569677
 }
 
 @media (max-width: 767px) {
@@ -136,6 +217,7 @@ nav.fixed {
   border: 3px solid #046896;
 }
 
+<<<<<<< HEAD
 .menu-item-2 img {
   max-width: 60%;
   margin: auto;
@@ -229,6 +311,49 @@ nav.fixed {
   .in-block .brand-name,
   .main-block .brand-name {
     border: 75px solid #fff;
+=======
+.menu-item {
+    display: grid;
+    gap: 24px;
+}
+
+.menu-item img {
+    border: 3px solid #046896;
+}
+
+.menu-item-2 img {
+    max-width: 60%;
+    margin: auto;
+}
+
+.brand-name img {
+    width: 100px;
+    margin-top: 10px;
+}
+/* End Nav */
+
+.title-style {
+    font-size: 48px;
+}
+
+.title-style > span {
+    padding: 0 15px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Pages-In */
+.in-block {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 50px;
+}
+
+.in-block .brand-name {
+    border: 100px solid #fff;
+>>>>>>> 02e7d8354cf46d1d32ac3ae0ab6c20e1d6569677
     border-top-color: rgb(141 206 253);
     border-bottom: 0;
     border-right-color: transparent;
@@ -242,6 +367,7 @@ nav.fixed {
   }
 }
 
+<<<<<<< HEAD
 .logo {
   margin-left: 20%;
 }
@@ -253,6 +379,28 @@ nav.fixed {
   width: 100%;
   animation: horizontalMove 120s infinite;
   animation-timing-function: ease;
+=======
+.in-block .brand-name img {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 128px;
+    margin-top: 4px;
+    margin-left: -63px;
+}
+
+.bg-block {
+    background-color: rgb(15 105 148 / 80%);
+}
+
+.describe {
+    background-size: cover;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    width: 100%;
+    animation: horizontalMove 120s infinite;
+    animation-timing-function: ease;
+>>>>>>> 02e7d8354cf46d1d32ac3ae0ab6c20e1d6569677
 }
 
 .block-gallery img {
@@ -448,6 +596,14 @@ nav.fixed {
   }
   100% {
     opacity: 0;
+<<<<<<< HEAD
     transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
   }
+=======
+}
+
+
+.copyright-link {
+    color: #fff;
+>>>>>>> 02e7d8354cf46d1d32ac3ae0ab6c20e1d6569677
 }

@@ -11,4 +11,8 @@ for(let i=0;i<imgs.length;i++){
     main.src=this.src
   })
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 02e7d8354cf46d1d32ac3ae0ab6c20e1d6569677

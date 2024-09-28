@@ -20,6 +20,11 @@ sm:flex-row {
   flex-direction: row;
 }
 
+.sm\:py-10 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
 .logo-font {
   font-family: "Caveat", system-ui;
   font-display: swap;

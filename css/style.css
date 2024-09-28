@@ -361,6 +361,12 @@ nav.fixed {
   transform: translate(-50%, -50%);
 }
 
+@media (min-width: 1200px) {
+  .modal-content {
+    width: 50%;
+  }
+}
+
 #caption {
   margin: 20px auto;
   text-align: center;

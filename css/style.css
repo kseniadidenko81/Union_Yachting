@@ -227,6 +227,10 @@ nav.fixed {
   margin: auto;
 }
 
+.sketo-logo:hover {
+  transform: scale(1.2);
+}
+
 .sketo-logo img {
   width: 100%;
   max-width: 100%;

@@ -220,6 +220,19 @@ nav.fixed {
   object-fit: cover;
 }
 
+.sketo-logo {
+  max-width: 180px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.sketo-logo img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 .intro-text {
   height: 100%;
 }

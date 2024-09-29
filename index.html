@@ -25,6 +25,7 @@
       <div class="loader"></div>
     </div>
     <!-- End Preloader -->
+
     <!-- Intro section -->
     <header id="intro" class="section-intro relative w-full h-full">
       <div class="absolute w-full">
@@ -281,12 +282,14 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>
 
-    <!-- Shevron -->
+    <!-- Shevron Script -->
     <script>
       $(function () {
+        var offset = 56;
+
         $(".chevron-content").click(function () {
           $("html, body").animate(
-            { scrollTop: $("section").offset().top },
+            { scrollTop: $("section").offset().top - offset },
             "slow"
           );
           return false;
@@ -294,7 +297,7 @@
       });
     </script>
 
-    <!-- Nav toggle -->
+    <!-- Nav toggle Script -->
     <script>
       function checkAndShowHideMenu() {
         if (window.innerWidth < 768) {
@@ -342,13 +345,15 @@
         });
       });
     </script>
-    <!-- Preloader -->
+
+    <!-- Preloader Script -->
     <script>
       $(window).on("load", function () {
         $("body").addClass("loaded");
       });
     </script>
-    <!-- Nav -->
+
+    <!-- Nav Script -->
     <script>
       $(document).ready(function () {
         var nav = $("#nav");
@@ -366,6 +371,7 @@
       });
     </script>
 
+    <!-- Parallax Script -->
     <script>
       $(document).ready(function () {
         var offset = 56;

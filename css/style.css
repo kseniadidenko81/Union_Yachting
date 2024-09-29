@@ -227,7 +227,9 @@ nav.fixed {
   margin: auto;
 }
 
-.sketo-logo:hover {
+#sketo-logo-nav:hover,
+#logo:hover,
+.intro-text .sketo-logo:hover {
   transform: scale(1.1);
 }
 

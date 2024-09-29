@@ -139,6 +139,7 @@ textarea::-ms-input-placeholder {
 /* Common style */
 
 /* Nav */
+
 #nav {
   z-index: 1000;
   transition: all 0.3s ease;
@@ -168,11 +169,6 @@ nav.fixed {
     right: 0;
   }
 
-  .brand-name img {
-    width: 45px;
-    margin-top: 0;
-  }
-
   #nav ul {
     margin-top: 56px;
     background: white;
@@ -194,11 +190,6 @@ nav.fixed {
 .menu-item-2 img {
   max-width: 80%;
   margin: auto;
-}
-
-.brand-name img {
-  width: 100px;
-  margin-top: 10px;
 }
 /* End Nav */
 
@@ -229,6 +220,8 @@ nav.fixed {
 
 #sketo-logo-nav:hover,
 #logo:hover,
+#sketo-logo-nav:focus,
+#logo:focus,
 .intro-text .sketo-logo:hover {
   transform: scale(1.1);
 }
@@ -265,29 +258,6 @@ nav.fixed {
   height: 56px;
 }
 
-.in-block .brand-name,
-.main-block .brand-name {
-  border: 96px solid #fff;
-  border-top-color: rgb(141 206 253);
-  border-bottom: 0;
-  border-right-color: transparent;
-  border-left-color: transparent;
-}
-
-.in-block .brand-name img,
-.main-block .brand-name img {
-  position: absolute;
-  top: 0;
-  z-index: 2;
-  width: 120px;
-  margin-top: 2px;
-  margin-left: -60px;
-}
-
-.in-block .brand-name {
-  margin-right: 0;
-}
-
 @media (max-width: 370px) {
   h1 {
     font-size: 32px !important;
@@ -306,27 +276,6 @@ nav.fixed {
 
   #contact .flex-1.p-6 {
     padding: 1rem;
-  }
-
-  .in-block .brand-name,
-  .main-block .brand-name {
-    border: 75px solid #fff;
-    border-top-color: rgb(141 206 253);
-    border-bottom: 0;
-    border-right-color: transparent;
-    border-left-color: transparent;
-  }
-
-  .in-block .brand-name img,
-  .main-block .brand-name img {
-    width: 100px;
-    margin-left: -50px;
-  }
-}
-
-@media (min-width: 580px) {
-  .logo {
-    margin-left: 16%;
   }
 }
 
@@ -375,8 +324,13 @@ nav.fixed {
   background-size: cover;
 }
 
-.card:hover img {
+.card:hover img,
+.card:focus img {
   transform: scale(1.05);
+}
+.card:hover h3,
+.card:focus h3 {
+  transform: scale(1.1);
 }
 
 .contact:focus,
@@ -410,7 +364,8 @@ nav.fixed {
   border-radius: 10px;
 }
 
-.thumbnails img:hover {
+.thumbnails img:hover,
+.thumbnails img:focus {
   transform: scale(1.1);
 }
 

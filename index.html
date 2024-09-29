@@ -281,6 +281,20 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>
 
+    <!-- Shevron -->
+    <script>
+      $(function () {
+        $(".chevron-content").click(function () {
+          $("html, body").animate(
+            { scrollTop: $("section").offset().top },
+            "slow"
+          );
+          return false;
+        });
+      });
+    </script>
+
+    <!-- Nav toggle -->
     <script>
       function checkAndShowHideMenu() {
         if (window.innerWidth < 768) {
@@ -328,13 +342,13 @@
         });
       });
     </script>
-
+    <!-- Preloader -->
     <script>
       $(window).on("load", function () {
         $("body").addClass("loaded");
       });
     </script>
-
+    <!-- Nav -->
     <script>
       $(document).ready(function () {
         var nav = $("#nav");
@@ -353,14 +367,16 @@
     </script>
 
     <script>
-      $(function () {
-        $(".chevron-content").click(function () {
-          $("html, body").animate(
-            { scrollTop: $("section").offset().top },
-            "slow"
-          );
-          return false;
-        });
+      $(document).ready(function () {
+        var offset = 56;
+        var target = $(".parallax");
+
+        $("html, body").animate(
+          {
+            scrollTop: target.offset().top - offset,
+          },
+          0
+        );
       });
     </script>
   </body>

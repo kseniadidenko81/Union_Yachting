@@ -357,7 +357,6 @@ nav.fixed {
   transform: translateZ(-1);
   overflow-x: hidden;
   overflow-y: auto;
-  /position: relative;
 }
 /* Thumbnails Image */
 

@@ -220,6 +220,13 @@
         window.location.href = "index.html";
       });
     </script>
+
+    <script>
+      $(window).on("load", function () {
+        $("body").addClass("loaded");
+      });
+    </script>
+
     <script>
       function checkAndShowHideMenu() {
         if (window.innerWidth < 768) {

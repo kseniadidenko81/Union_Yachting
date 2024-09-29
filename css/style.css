@@ -253,8 +253,10 @@ nav.fixed {
   }
 }
 
-.logo {
-  margin-left: 16%;
+@media (min-width: 580px) {
+  .logo {
+    margin-left: 16%;
+  }
 }
 
 .describe {

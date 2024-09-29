@@ -20,6 +20,11 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- End Preloader -->
     <!-- Intro section -->
     <header id="intro" class="section-intro relative w-full h-full">
       <div class="absolute w-full">
@@ -321,6 +326,12 @@
             });
           });
         });
+      });
+    </script>
+
+    <script>
+      $(window).on("load", function () {
+        $("body").addClass("loaded");
       });
     </script>
 

@@ -184,12 +184,22 @@ nav.fixed {
 }
 
 .menu-item img {
+  border: 3px solid transparent;
+}
+
+.menu-item img:hover,
+.menu-item img:focus {
   border: 3px solid #046896;
 }
 
 .menu-item-2 img {
   max-width: 80%;
   margin: auto;
+}
+
+.card:hover h3,
+.card:focus h3 {
+  transform: scale(1.1);
 }
 /* End Nav */
 
@@ -322,15 +332,6 @@ nav.fixed {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.card:hover img,
-.card:focus img {
-  transform: scale(1.05);
-}
-.card:hover h3,
-.card:focus h3 {
-  transform: scale(1.1);
 }
 
 .contact:focus,

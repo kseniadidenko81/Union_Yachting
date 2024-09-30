@@ -139,7 +139,7 @@
             </a>
           </div>
 
-          <div class=" card flex-1 m-5 rounded-xl bg-block item-container">
+          <div class="card flex-1 m-5 rounded-xl bg-block item-container">
             <a href="page-lagoon-450s_Salty-love.html">
               <div class="flex flex-col items-center mt-6 menu-item relative">
                 <img
@@ -173,7 +173,7 @@
     </section>
     <!-- End Section Yacht -->
 
-    <!-- Section Contact -->
+    <!-- Section Contact + Footer -->
     <section
       id="contact"
       class="parallax"
@@ -285,114 +285,12 @@
       </footer>
       <!-- End Footer -->
     </section>
-    <!-- End Section Contact -->
+    <!-- End Section Contact _ Footer -->
 
     <!-- Scripts -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>
 
-    <!-- Shevron Script -->
-    <script>
-      $(function () {
-        var offset = 56;
-
-        $(".chevron-content").click(function () {
-          $("html, body").animate(
-            { scrollTop: $("section").offset().top - offset },
-            "slow"
-          );
-          return false;
-        });
-      });
-    </script>
-
-    <!-- Nav toggle Script -->
-    <script>
-      function checkAndShowHideMenu() {
-        if (window.innerWidth < 768) {
-          $("#nav ul").addClass("hidden");
-        } else {
-          $("#nav ul").removeClass("hidden");
-        }
-      }
-
-      $(function () {
-        var tmNav = $("#nav");
-        tmNav.singlePageNav();
-
-        checkAndShowHideMenu();
-        window.addEventListener("resize", checkAndShowHideMenu);
-
-        $("#menu-toggle").click(function () {
-          $("#nav ul").toggleClass("hidden");
-        });
-
-        $("#nav ul li").click(function () {
-          if (window.innerWidth < 768) {
-            $("#nav ul").addClass("hidden");
-          }
-        });
-
-        $(document).scroll(function () {
-          var distanceFromTop = $(document).scrollTop();
-
-          if (distanceFromTop > 100) {
-            tmNav.addClass("scroll");
-          } else {
-            tmNav.removeClass("scroll");
-          }
-        });
-
-        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-          anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-
-            document.querySelector(this.getAttribute("href")).scrollIntoView({
-              behavior: "smooth",
-            });
-          });
-        });
-      });
-    </script>
-
-    <!-- Preloader Script -->
-    <script>
-      $(window).on("load", function () {
-        $("body").addClass("loaded");
-      });
-    </script>
-
-    <!-- Nav Script -->
-    <script>
-      $(document).ready(function () {
-        var nav = $("#nav");
-        var navOffset = nav.offset().top;
-
-        $(window).on("scroll", function () {
-          var scrollPos = $(window).scrollTop();
-
-          if (scrollPos >= navOffset) {
-            nav.addClass("fixed");
-          } else {
-            nav.removeClass("fixed");
-          }
-        });
-      });
-    </script>
-
-    <!-- Parallax Script -->
-    <script>
-      $(document).ready(function () {
-        var offset = 56;
-        var target = $(".parallax");
-
-        $("html, body").animate(
-          {
-            scrollTop: target.offset().top - offset,
-          },
-          0
-        );
-      });
-    </script>
+    <script src="js/index.js"></script>
   </body>
 </html>
